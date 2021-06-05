@@ -1,0 +1,14 @@
+
+.darkMode {
+    background-color: #323538;
+}
+
+.darkMode input {
+    background-color: #323538;
+    color: lightgray;
+    filter: drop-shadow(0 1px 1px rgba(150, 150, 150, 0.8));
+}
+
+.darkMode .row {
+    color: lightgray;
+}

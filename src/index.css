@@ -1,0 +1,80 @@
+body {
+  position: relative;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  min-height: 95vh;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#darkToggle {
+  position: fixed;
+  bottom: 4rem;
+  left: 2rem;
+  background: white;
+  border-radius: 100%;
+  z-index: 999;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.8));
+  cursor: pointer;
+}
+
+.modeSwitch {
+  z-index: 999;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+}
+
+.modeSwitch svg {
+  width: 0;
+  transition: all .3s ease-in;
+  transform-origin: center;
+}
+
+.modeSwitch .moon {
+  opacity: 0;
+}
+
+.modeSwitch .sun {
+  width: 30px;
+}
+
+.dark {
+  background: #323538 !important;
+}
+
+.dark .moon {
+  opacity: 1;
+  width: 30px;
+}
+
+.dark .sun {
+  opacity: 0;
+  width: 0;
+}
