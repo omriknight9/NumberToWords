@@ -1,1 +1,1 @@
-# In this web application you can write a number and get it in words
+In this web application you can write a number and get it in words
